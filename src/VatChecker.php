@@ -4,7 +4,7 @@ namespace Justijndepover\SimpleVatChecker;
 
 class VatChecker
 {
-    public static function validate(string $vatNumber)
+    public static function validate(string $vatNumber): bool
     {
         // België
         if (preg_match('/^BE(0[0-9]{7})([0-9]{2})$/', $vatNumber, $matches)) {

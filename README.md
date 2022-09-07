@@ -23,7 +23,12 @@ composer require justijndepover/simple-vat-checker
 
 ## Usage
 
+Use the `validate` method to check whether the given VAT number is valid or not.
+```php
+use Justijndepover\SimpleVatChecker\VatChecker;
 
+VatChecker::validate('BE0123456789'); // returns a boolean
+```
 
 ## Security
 
