@@ -1,0 +1,32 @@
+{
+    "name": "justijndepover/simple-vat-checker",
+    "description": "Simple VAT checker based on regex, no API is used",
+    "keywords": ["VAT", "php", "justijndepover"],
+    "homepage": "https://github.com/justijndepover/simple-vat-checker",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Justijn Depover",
+            "email": "justijndepover@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Justijndepover\\SimpleVatChecker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Justijndepover\\SimpleVatChecker\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "justijndepover/php-check": "^0.12.0"
+    }
+}
