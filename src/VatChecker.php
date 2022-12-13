@@ -8,7 +8,7 @@ class VatChecker
     {
         // België
         if (preg_match('/^BE(0[0-9]{7})([0-9]{2})$/', $vatNumber, $matches)) {
-            $result = 97 - ($matches[1] - round($matches[1] / 97) * 97);
+            $result = 97 - ($matches[1] - floor($matches[1] / 97) * 97);
 
             if ($result == $matches[2]) {
                 return true;
